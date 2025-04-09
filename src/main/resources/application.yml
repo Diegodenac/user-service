@@ -1,0 +1,19 @@
+spring:
+  application.name: product
+  datasource:
+    url: jdbc:mysql://mysql:3306/ms_user
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+server:
+  port: 9080
+  error:
+    include-message: always
+api:
+  response_codes:
+    ok.description: Its a successfull
+    internalServer.description: Internal Server Error. See response message for more information
